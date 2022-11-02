@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.firstRow{
+    margin-left: 220px;
+}
+.fontClr{
+    color: aliceblue;
+}
+
+.mainContainer{
+background-color: black;
+}
+
+.balance{
+    font-size: 30px;
+}
+
+#calculate{
+    margin-right: 15px;
+}
