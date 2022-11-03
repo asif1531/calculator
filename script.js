@@ -8,29 +8,37 @@ const operator = document.getElementById("operator");
 calculate.addEventListener("click", function () {
   const opValue = operator.value;
 
-  //   if (num1.value && num2.value == "") {
-  //     alert("Enter a Number");
-  //   }
-  if (opValue == "+") {
-    result.textContent = `Result is : ${
-      Number(num1.value) + Number(num2.value)
-    }`;
-  } else if (opValue == "-") {
-    result.textContent = `Result is : ${
-      Number(num1.value) - Number(num2.value)
-    }`;
-  } else if (opValue == "*") {
-    result.textContent = `Result is : ${
-      Number(num1.value) * Number(num2.value)
-    }`;
-  } else if (opValue == "/") {
-    result.textContent = `Result is : ${
-      Number(num1.value) + Number(num2.value)
-    }`;
-  } else if (opValue == "%") {
-    result.textContent = `Result is : ${
-      Number(num1.value) + Number(num2.value)
-    }`;
+  // typeof num1.value && typeof num2.value == "string"
+  //   ? alert("Please Enter The Number"):continue
+
+  switch (opValue) {
+    case "+":
+      result.textContent = `Result is : ${
+        Number(num1.value) + Number(num2.value)
+      }`;
+      break;
+    case "-":
+      result.textContent = `Result is : ${
+        Number(num1.value) - Number(num2.value)
+      }`;
+      break;
+    case "*":
+      result.textContent = `Result is : ${
+        Number(num1.value) * Number(num2.value)
+      }`;
+      break;
+    case "/":
+      result.textContent = `Result is : ${
+        Number(num1.value) / Number(num2.value)
+      }`;
+      break;
+    case "%":
+      result.textContent = `Result is : ${
+        Number(num1.value) % Number(num2.value)
+      }`;
+      break;
+    default:
+      alert("Please Input Two Numbers and Select one opertor");
   }
 });
 
@@ -38,5 +46,5 @@ clearScrn.addEventListener("click", function () {
   num1.value = "";
   operator.value = "";
   num2.value = "";
-  Result.textContent = "Result is: 0";
+  result.textContent = "Result is: 0";
 });
