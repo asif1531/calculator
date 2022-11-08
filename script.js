@@ -1,3 +1,4 @@
+"use Strict";
 const num1 = document.getElementById("InputFirst");
 const num2 = document.getElementById("InputSecond");
 const calculate = document.querySelector("#calculate");
@@ -7,38 +8,34 @@ const operator = document.getElementById("operator");
 
 calculate.addEventListener("click", function () {
   const opValue = operator.value;
-
-  // typeof num1.value && typeof num2.value == "string"
-  //   ? alert("Please Enter The Number"):continue
-
-  switch (opValue) {
-    case "+":
-      result.textContent = `Result is : ${
-        Number(num1.value) + Number(num2.value)
-      }`;
-      break;
-    case "-":
-      result.textContent = `Result is : ${
-        Number(num1.value) - Number(num2.value)
-      }`;
-      break;
-    case "*":
-      result.textContent = `Result is : ${
-        Number(num1.value) * Number(num2.value)
-      }`;
-      break;
-    case "/":
-      result.textContent = `Result is : ${
-        Number(num1.value) / Number(num2.value)
-      }`;
-      break;
-    case "%":
-      result.textContent = `Result is : ${
-        Number(num1.value) % Number(num2.value)
-      }`;
-      break;
-    default:
-      alert("Please Input Two Numbers and Select one opertor");
+  let results = 0;
+  if (isNaN(num1.value) && isNaN(num2.value)) {
+    alert("Please Enter The Valid Numbers and Operator You Want to Perform");
+  } else {
+    switch (opValue) {
+      case "+":
+        results = Number(num1.value) + Number(num2.value);
+        result.textContent = `Result is : ${results}`;
+        break;
+      case "-":
+        results = Number(num1.value) - Number(num2.value);
+        result.textContent = `Result is : ${results}`;
+        break;
+      case "*":
+        results = Number(num1.value) * Number(num2.value);
+        result.textContent = `Result is : ${results}`;
+        break;
+      case "/":
+        results = Number(num1.value) / Number(num2.value);
+        result.textContent = `Result is : ${results}`;
+        break;
+      case "%":
+        results = Number(num1.value) % Number(num2.value);
+        result.textContent = `Result is : ${results}`;
+        break;
+      default:
+        alert("Please Input Two Numbers and Enter one opertor");
+    }
   }
 });
 
