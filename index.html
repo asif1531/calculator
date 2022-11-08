@@ -11,22 +11,33 @@
 <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header><h1> Calculator</h1></header>
+
+    <header>
+      <nav class="navbar main-nav">
+        <div class="container-fluid navHead justify-content-center">
+          <a class="navbar-brand" href="#">
+            <img src="images/calc.png" alt="Logo" width="48" height="44" class="d-inline-block align-text-top">
+            Calculator
+          </a>
+        </div>
+      </nav>
+      
+    </header>
    <section>
     <div class="container text-center mainContainer">
-        <div class="row">
-          <div class="col-3 firstRow">
+        <div class="row ">
+          <div class="col firstRow">
             <div class="mb-3">
                 <label for="InputNumber1" class="form-label fontClr">Please Enter 1st Number</label>
-                <input type="text" class="form-control" id="InputFirst" >
+                <input type="text" class="form-control" placeHolder="First Number goes Here" id="InputFirst"  >
               </div>
               <div class="mb-3">
                 <label for="Operators" class="form-label fontClr">Please Enter the Operator</label>
-                <input type="text" class="form-control" id="operator" >
+                <input type="text" class="form-control" placeHolder="Operator goes Here" id="operator" >
               </div>
               <div class="mb-3">
                 <label for="InputNumber2" class="form-label fontClr">Please Enter 2nd Number</label>
-                <input type="text" class="form-control" id="InputSecond" >
+                <input type="text" class="form-control" placeHolder="Second Number goes Here" id="InputSecond" >
               </div>
               <div class="resultDiv">
                 <p class="result fontClr">
@@ -37,17 +48,22 @@
                 <button type="button" class="btn btn-warning " id="clear">clear</button>
               </div>
         </div>
-          <div class="col">
-            <h3 class="fontClr">Welcome to My Calculator</h3>
-           <h4 class="fontClr"><p>Instruction to be Followed</p></h4> 
-            <p class="fontClr">1.Enter First number in Input 1</p>
-            <p class="fontClr">2.Enter operator (+,-,*,/,%) in operator field</p>
-            <p class="fontClr">3.Enter Second number in Input 2</p>
-            <p class="fontClr">4.Click on calculate Button to see the Result</p>
-            <p class="fontClr">5.Click On clear to clear the Inputs</p>
+          <div class="col secondCol">
+            <h3 class="fontClrSecond">Welcome to My Calculator</h3>
+           <h4 class="fontClrSecond"><p>Instruction to be Followed</p></h4> 
+            <p class="fontClrSecond">1.Enter First number in Input 1</p>
+            <p class="fontClrSecond">2.Enter operator (+,-,*,/,%) in operator field</p>
+            <p class="fontClrSecond">3.Enter Second number in Input 2</p>
+            <p class="fontClrSecond">4.Click on calculate Button to see the Result</p>
+            <p class="fontClrSecond">5.Click On clear to clear the Inputs</p>
           </div>
     
 </section>
+<footer>
+  <div class="footer">
+    <p class="footerText">&copy; Made By Asif</p>
+</div>
+</footer>
 
 <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

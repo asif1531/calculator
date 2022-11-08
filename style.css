@@ -1,24 +1,59 @@
-h1{
+h1 {
     text-align: center;
     margin-top: 10px;
     font-size: 50px;
 }
 
-.firstRow{
+body {
+    background-color: black;
+}
+
+.firstRow {
     margin-left: 220px;
 }
-.fontClr{
+
+.fontClr {
     color: aliceblue;
 }
 
-.mainContainer{
-background-color: black;
+.fontClrSecond {
+    margin-top: 18px;
+    color: black;
+    font-style: italic;
 }
 
-.balance{
+.mainContainer {
+    margin-top: 120px;
+    margin-left: 120px;
+    text-align: center;
+
+}
+
+.balance {
     font-size: 30px;
 }
 
-#calculate{
+#calculate {
     margin-right: 15px;
+}
+
+.secondCol {
+    background-color: #ffff00eb;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.main-nav {
+    text-align: center;
+    background-color: #ffff00eb;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.footer {
+    color: wheat;
+    text-align: center;
+    margin-top: 400px;
 }

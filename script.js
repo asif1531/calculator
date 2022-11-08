@@ -10,7 +10,9 @@ calculate.addEventListener("click", function () {
   const opValue = operator.value;
   let results = 0;
   if (isNaN(num1.value) && isNaN(num2.value)) {
-    alert("Please Enter The Valid Numbers and Operator You Want to Perform");
+    alert(
+      "Please Enter The Valid Numbers and Valid Operator to perform Calculation!"
+    );
   } else {
     switch (opValue) {
       case "+":
@@ -34,7 +36,7 @@ calculate.addEventListener("click", function () {
         result.textContent = `Result is : ${results}`;
         break;
       default:
-        alert("Please Input Two Numbers and Enter one opertor");
+        alert("Please Input Two Numbers and Valid opertor");
     }
   }
 });
@@ -43,5 +45,5 @@ clearScrn.addEventListener("click", function () {
   num1.value = "";
   operator.value = "";
   num2.value = "";
-  result.textContent = "Result is: 0";
+  result.textContent = "Result is : 0";
 });
